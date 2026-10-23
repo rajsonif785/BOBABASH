@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>You Have 5 Minutes!</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="game">
+    <header>
+      <p class="tag">A VERY BAD MONDAY</p>
+      <h1>You Have 5 Minutes!</h1>
+      <p class="subtitle">One morning. Terrible decisions. Your future.</p>
+    </header>
+
+    <section class="status">
+      <span id="clock">08:00 AM</span>
+      <span id="progress">Scene 1</span>
+    </section>
+
+    <div class="progress-track">
+      <div id="progress-bar"></div>
+    </div>
+
+    <section class="story-card">
+      <div id="scene-icon" class="scene-icon">⏰</div>
+      <h2 id="scene-title">YOU'RE LATE.</h2>
+      <p id="story-text">Loading your terrible morning...</p>
+      <div id="choices" class="choices"></div>
+    </section>
+
+    <footer>
+      <p>Made with questionable decisions and JavaScript.</p>
+      <button id="restart" class="restart-button">↻ Start over</button>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,174 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f7f5ef;
+  color: #252525;
+  display: flex;
+  justify-content: center;
+  padding: 35px 16px;
+}
+
+.game {
+  width: 100%;
+  max-width: 620px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.tag {
+  display: inline-block;
+  background: #ffe6a7;
+  border: 1px solid #e9cc7f;
+  border-radius: 20px;
+  padding: 7px 13px;
+  font-size: 11px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+}
+
+h1 {
+  font-size: clamp(32px, 7vw, 49px);
+  line-height: 1.1;
+  margin: 12px 0;
+  letter-spacing: -2px;
+}
+
+h1 span {
+  color: #ef684c;
+}
+
+.subtitle {
+  color: #777;
+  font-size: 14px;
+}
+
+.status {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#clock {
+  color: #e15d43;
+}
+
+.progress-track {
+  width: 100%;
+  height: 7px;
+  background: #e7e3da;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 18px;
+}
+
+#progress-bar {
+  height: 100%;
+  width: 10%;
+  background: #ef684c;
+  border-radius: 10px;
+  transition: width 0.3s ease;
+}
+
+.story-card {
+  background: white;
+  border: 1px solid #e7e2d9;
+  border-radius: 18px;
+  padding: 28px;
+  box-shadow: 0 8px 25px #2820140b;
+}
+
+.scene-icon {
+  font-size: 55px;
+  text-align: center;
+  padding: 12px 0 18px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 25px;
+  margin: 0 0 14px;
+}
+
+#story-text {
+  color: #666;
+  line-height: 1.8;
+  font-size: 15px;
+  text-align: center;
+  min-height: 55px;
+}
+
+.choices {
+  display: grid;
+  gap: 10px;
+  margin-top: 25px;
+}
+
+.choice-button {
+  padding: 15px;
+  border: 1px solid #dedbd3;
+  border-radius: 10px;
+  background: #faf9f6;
+  font-size: 14px;
+  text-align: left;
+  color: #292929;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.choice-button:hover {
+  background: #fff0d2;
+  border-color: #efb45e;
+  transform: translateY(-2px);
+}
+
+.choice-button:focus-visible,
+.restart-button:focus-visible {
+  outline: 3px solid #e88954;
+  outline-offset: 3px;
+}
+
+footer {
+  text-align: center;
+  margin-top: 25px;
+  color: #999;
+  font-size: 12px;
+}
+
+.restart-button {
+  background: transparent;
+  border: none;
+  color: #e15d43;
+  font-size: 13px;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.restart-button:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 22px 12px;
+  }
+
+  .story-card {
+    padding: 20px;
+  }
+
+  h1 {
+    letter-spacing: -1px;
+  }
+}
