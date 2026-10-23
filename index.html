@@ -2,39 +2,93 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>You Have 5 Minutes!</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EARTH.EXE HAS CRASHED</title>
   <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
-  <main class="game">
-    <header>
-      <p class="tag">A VERY BAD MONDAY</p>
-      <h1>You Have 5 Minutes!</h1>
-      <p class="subtitle">One morning. Terrible decisions. Your future.</p>
-    </header>
+  <div class="progress"><div id="progress"></div></div>
+  <div class="noise"></div>
 
-    <section class="status">
-      <span id="clock">08:00 AM</span>
-      <span id="progress">Scene 1</span>
+  <header class="topbar">
+    <span>UNOFFICIAL PLANET NEWS™</span>
+    <span class="live">● LIVE-ish</span>
+    <span id="clock">THE PRESENT??</span>
+  </header>
+
+  <main>
+    <section class="story-section intro" data-scene="intro">
+      <div class="sticker sticker-one">100% REAL NEWS</div>
+      <div class="sticker sticker-two">SOURCE: TRUST ME BRO</div>
+      <p class="eyebrow">BREAKING NEWS / PROBABLY</p>
+      <h1>THE DAY<br>EARTH <span class="highlight">DISAPPEARED.</span></h1>
+      <p class="subhead">and nobody even got a notification.</p>
+      <div class="scroll-note">SCROLL DOWN. BAD THINGS HAPPEN ↓</div>
+      <div class="big-number">01</div>
     </section>
 
-    <div class="progress-track">
-      <div id="progress-bar"></div>
-    </div>
-
-    <section class="story-card">
-      <div id="scene-icon" class="scene-icon">⏰</div>
-      <h2 id="scene-title">YOU'RE LATE.</h2>
-      <p id="story-text">Loading your terrible morning...</p>
-      <div id="choices" class="choices"></div>
+    <section class="story-section morning" data-scene="morning">
+      <div class="section-label">07:42 AM // TUESDAY??</div>
+      <div class="chaos-copy">
+        <h2>IT WAS A<br><span class="highlight">NORMAL</span><br>DAY.</h2>
+        <p>People were doomscrolling.</p>
+        <p>Someone was arguing online about pineapple pizza.</p>
+        <p>Some guy was late for school.</p>
+        <p class="big-quote">LITERALLY NOTHING WAS WRONG.</p>
+      </div>
+      <div class="visual earth-scene">
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+        <div class="earth"><span>EARTH</span></div>
+        <div class="planet-caption">our overpriced space rock</div>
+      </div>
+      <div class="side-note">nice planet. shame if something happened to it.</div>
     </section>
 
-    <footer>
-      <p>Made with questionable decisions and JavaScript.</p>
-      <button id="restart" class="restart-button">↻ Start over</button>
-    </footer>
+    <section class="story-section warning" data-scene="warning">
+      <div class="section-label">08:03 AM // SYSTEM FAILURE</div>
+      <div class="alert">!!! EMERGENCY BROADCAST !!!</div>
+      <h2>NASA HAS<br>LEFT THE GROUP.</h2>
+      <div class="fake-terminal">
+        <p>&gt; scanning solar system...</p>
+        <p>&gt; earth.exe not responding</p>
+        <p>&gt; have you tried turning it off and on again?</p>
+        <p class="terminal-red">&gt; ERROR: PLANET NOT FOUND LOL</p>
+      </div>
+      <div class="radar"><div class="radar-sweep"></div><span>SEARCHING...</span></div>
+      <div class="sticker warning-sticker">THIS IS FINE.</div>
+    </section>
+
+    <section class="story-section gone" data-scene="gone">
+      <div class="section-label">08:04 AM // UH OH</div>
+      <p class="tiny-intro">so, funny story...</p>
+      <h2>EARTH<br>IS <span class="highlight">GONE.</span></h2>
+      <div class="empty-space">
+        <div class="orbit-line"></div>
+        <div class="missing">[ PLANET MISSING ]</div>
+        <div class="error-code">404: HOME NOT FOUND</div>
+      </div>
+      <p class="gone-caption">no planet. no warning. no refund.</p>
+      <div class="big-number">???</div>
+    </section>
+
+    <section class="story-section after" data-scene="after">
+      <div class="section-label">SOME TIME LATER // SPACE IS WEIRD</div>
+      <div class="tiny-earth">.</div>
+      <h2>THE UNIVERSE<br><span class="highlight">DIDN'T EVEN</span><br>NOTICE.</h2>
+      <p class="after-copy">
+        Stars kept exploding. Galaxies kept moving.
+        Somewhere, a black hole was having the time of its life.
+      </p>
+      <p class="after-copy">Meanwhile, 8 billion people were suddenly a very awkward missing-person case.</p>
+      <div class="final-stamp">THE END??</div>
+      <p class="final-line">WE THOUGHT WE WERE THE WHOLE STORY.</p>
+      <button id="replay">REPLAY THIS ABSOLUTELY UNNECESSARY TRAUMA ↻</button>
+    </section>
   </main>
 
-  <script src="script.js"></script>
+  <footer>MADE ON EARTH. PROBABLY. &nbsp; // &nbsp; NO PLANETS WERE CONSULTED.</footer>
 </body>
 </html>
